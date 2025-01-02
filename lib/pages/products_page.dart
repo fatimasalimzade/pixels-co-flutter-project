@@ -51,6 +51,9 @@ class _PixelscoTaskState extends State<PixelscoTask> {
                     fontSize: 24,
                     fontWeight: FontWeight.bold),
               ),
+              SizedBox(
+                height: 12,
+              ),
               GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,

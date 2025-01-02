@@ -24,7 +24,8 @@ class _ProductDescComponentState extends State<ProductDescComponent> {
             Color(0xff1D1F23),
           ],
         ),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(18), topRight: Radius.circular(12)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -45,10 +46,14 @@ class _ProductDescComponentState extends State<ProductDescComponent> {
               const Row(
                 children: [
                   const SizedBox(
-                    width: 32,
-                    height: 32,
-                    child: PlusMinusButtonWidget(child: Text("-", style: TextStyle(fontSize: 16, color: Colors.white),),)
-                  ),
+                      width: 32,
+                      height: 32,
+                      child: PlusMinusButtonWidget(
+                        child: Text(
+                          "-",
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                        ),
+                      )),
                   SizedBox(
                     width: 10,
                   ),
@@ -61,10 +66,13 @@ class _ProductDescComponentState extends State<ProductDescComponent> {
                     width: 10,
                   ),
                   SizedBox(
-                    width: 32,
-                    height: 32,
-                    child: PlusMinusButtonWidget(child: Text("+", style: TextStyle(fontSize: 16, color: Colors.white)),)
-                  ),
+                      width: 32,
+                      height: 32,
+                      child: PlusMinusButtonWidget(
+                        child: Text("+",
+                            style:
+                                TextStyle(fontSize: 16, color: Colors.white)),
+                      )),
                 ],
               ),
             ],
